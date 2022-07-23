@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
  
-#define int long long 
- 
 struct SCC{
     int n;
     vector<vector<int>> g, gr; 
@@ -37,7 +35,7 @@ struct SCC{
     }
 };
  
-signed main() {
+int main() {
  
     ios :: sync_with_stdio(0);
     cin.tie(0);
@@ -62,7 +60,7 @@ signed main() {
         for(int i = 1; i <= n; ++i) {
             sum[comp[i]] += a[i];
             cnt[comp[i]] ++;
-            mn[comp[i]] = min(mn[comp[i]], i);
+            mn[comp[i]] = min(mn[comp[i]], i * 1ll);
         }
         long long mx = -1, idx = -1;
         for(int i = 1; i <= n; ++i) {
