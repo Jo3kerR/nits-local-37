@@ -1,1 +1,2 @@
-# nits-local-37
+# NITS Local 37
+
